@@ -2,23 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Band/Venue Revenue Split Calculator</title>
+
     <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Band/Venue Split</h1>
+      <h1>Band - Venue Split</h1>
 
       <form action="">
-        <label>
-          <input id="total-revenue" type="text" placeholder="$" />
-          Total Revenue
-        </label>
+        <div id="total-container">
+          <input
+            name="total-revenu"
+            id="total-revenue"
+            type="text"
+            placeholder="$"
+          />
+          <label for="total-revenu">Total Revenue</label>
+        </div>
 
-        <input id="venue-percentage" type="text" placeholder="%" />
-
-        <button>Input</button>
+        <div id="percentage-container">
+          <input
+            name="venue-percentage"
+            id="venue-percentage"
+            type="text"
+            placeholder="%"
+          />
+          <label for="venue-percentage">Venue Pecentage</label>
+        </div>
+        <div id="button-container">
+          <button>Input</button>
+        </div>
       </form>
     </div>
     <!-- <footer>All rights reservered Peter MoDavis 2023</footer> -->
