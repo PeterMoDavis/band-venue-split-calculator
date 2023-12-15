@@ -29,6 +29,10 @@ function calculateBandSplit(total, venuePercentage) {
 
     console.log(bandRevenue, venueRevenue);
 
+    if (bandRevenue <= venueRevenue) {
+      return `Band revenue: <span><b>$${bandRevenue}</b></span> Venue revenue: <span><b class="bad">${venueRevenue}</b></span>`;
+    }
+
     return `Band revenue: <span><b>$${bandRevenue}</b></span> Venue revenue: <span><b>$${venueRevenue}</b></span>`;
   }
 }
